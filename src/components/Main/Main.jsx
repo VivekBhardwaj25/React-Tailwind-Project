@@ -18,9 +18,32 @@ import play from "/src/assets/play_arrow.svg";
 import obj4 from "/src/assets/objects_4.svg";
 import obj5 from "/src/assets/objects_5.svg";
 import arrowforward from "/src/assets/arrow_forward.svg"
+import { IoMdEye, IoIosEyeOff } from "react-icons/io";
 
 function Main() {
   const [isLogin, setIsLogin] = useState(true);
+  const [Icon, setIcon] = useState(true)
+  const [type, setType] = useState('password')
+
+  const handleToggale = () => {
+    if(type === 'password') {
+      setType('text')
+      setIcon(false)
+    } else {
+      setType('password')
+      setIcon(true)
+    }
+  }
+  // const handleToggale = () => {
+  //   if(Icon === true) {
+  //     setType('text')
+  //     setIcon(false)
+  //   } else {
+  //     setType('password')
+  //     setIcon(true)
+  //   }
+  // }
+
 
   const LogIn = () => {
     return (
@@ -59,13 +82,19 @@ function Main() {
             type="email"
             placeholder="Email"
             className="text-[#939CA3] font-popin h-[40px] rounded-[8px] w-[410px] pt-[12px] pb-[12px] pl-[12px] outline-none"
+            
           />
-          <div className="">
+          <div className="relative">
             <input
-              type="password"
+              type = {type}
               placeholder="Password"
               className="text-[#939CA3] font-popin h-[40px] rounded-[8px] w-[410px] pt-[12px] pb-[12px] pl-[12px] outline-none"
             />
+            <div onClick={handleToggale} className="text-[#6d747a] w-[16px] h-[16px] absolute right-3.5 top-2.5">
+              {Icon ? <IoIosEyeOff size={20}/> : <IoMdEye size={20}/>}
+            
+            </div>
+            
             <div></div>
           </div>
         </div>
@@ -98,7 +127,7 @@ function Main() {
         </div>
 
         <div className="mt-[24px]">
-          <button className="w-[410px] h-[40px] border border-black rounded-[8px] text-center font-popin font-semibold text-sm">
+          <button className="w-[410px] h-[40px] border border-[#8064a2] bg-[#8064a2] text-[#ffffff] rounded-[8px] text-center font-popin font-semibold text-sm hover:bg-[#634e7d]">
             Continue
           </button>
         </div>
@@ -154,11 +183,11 @@ function Main() {
           </div>
         </div>
 
-        <div className="w-[409px] h-[16px] flex justify-between mt-[4px]">
+        <div className="w-[406px] h-[16px] flex justify-between mt-[4px]">
           <div className="w-[186px] h-[16px] flex items-center gap-x-[2px]">
-            <div className="w-[60px] h-[4px] rounded-[2px] bg-gray-600"></div>
-            <div className="w-[60px] h-[4px] rounded-[2px] bg-gray-600"></div>
-            <div className="w-[60px] h-[4px] rounded-[2px] bg-gray-600"></div>
+            <div className="w-[60px] h-[4px] rounded-[2px] bg-[#ffffff]"></div>
+            <div className="w-[60px] h-[4px] rounded-[2px] bg-[#ffffff]"></div>
+            <div className="w-[60px] h-[4px] rounded-[2px] bg-[#ffffff]"></div>
           </div>
           <div className="w-[96px] h-[16px] flex items-center justify-end cursor-pointer">
             <p className="font-popin font-semibold text-[10px] text-[#939CA3]">
@@ -176,7 +205,7 @@ function Main() {
         </div>
 
         <div className="mt-[12px]">
-          <button className="w-[410px] h-[40px] bg-[#8064A2] text-[#ffffff] rounded-[8px] text-center font-popin font-semibold text-sm">
+          <button className="w-[410px] h-[40px] bg-[#8064A2] text-[#ffffff] rounded-[8px] text-center font-popin font-semibold text-sm hover:bg-[#634e7d]">
             Agree and Continue
           </button>
         </div>
@@ -228,9 +257,9 @@ function Main() {
           <div className="w-[169px] h-[34px] flex justify-between">
             <div className="w-[76px] h-[30px] cursor-pointer">
               <a
-                onClick={() => setIsLogin(true)}
+                onClick = {() => setIsLogin(true)}
                 href="#"
-                className="text-[#8064A2] hover:underline underline-offset-8 decoration-[2px] font-popin text-[20px] font-semibold"
+                className={`${isLogin === true ? 'text-[#8064a2] font-popin font-semibold underline underline-offset-8 decoration-[2px] text-xl' : 'text-[#939CA3] font-semibold font-popin text-xl'}`}
               >
                 Sign in
               </a>
@@ -239,7 +268,7 @@ function Main() {
               <a
                 href="#"
                 onClick={() => setIsLogin(false)}
-                className="text-[#939CA3] font-semibold"
+                className={`${isLogin === false ? 'text-[#8064a2] font-popin font-semibold text-xl underline underline-offset-8 decoration-[2px]' : 'text-[#939CA3] font-popin font-semibold text-xl'}`}
               >
                 Join in
               </a>
