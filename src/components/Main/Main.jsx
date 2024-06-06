@@ -23,35 +23,27 @@ import { IoMdEye, IoIosEyeOff } from "react-icons/io";
 function Main() {
   const [isLogin, setIsLogin] = useState(true);
   const [Icon, setIcon] = useState(true)
-  const [type, setType] = useState('password')
+  const [type, setType] = useState(true)
 
   const handleToggale = () => {
-    if(type === 'password') {
-      setType('text')
+    if(type === true) {
+      setType(false)
       setIcon(false)
     } else {
-      setType('password')
+      setType(true)
       setIcon(true)
     }
   }
-  // const handleToggale = () => {
-  //   if(Icon === true) {
-  //     setType('text')
-  //     setIcon(false)
-  //   } else {
-  //     setType('password')
-  //     setIcon(true)
-  //   }
-  // }
+ 
 
 
   const LogIn = () => {
     return (
       <div>
-        <div className="w-[410px] h-[96px] gap-y-[16px] mt-[32px]">
+        <div className="md:w-[410px] md:h-[96px] md:gap-y-[16px] mt-[32px] w-[312px] h-[78px]">
           <div className="w-[410px] h-[40px] border border-[#8064A2] rounded-[8px] flex items-center">
             <img src={google} alt="" className="w-[16px] h-[16px] ml-[24px]" />
-            <a href="" className="font-popin text-sm text-center ml-[88px]">
+            <a href="" className="font-popin text-sm text-center md:ml-[88px]">
               Continue with Google
             </a>
           </div>
@@ -86,12 +78,12 @@ function Main() {
           />
           <div className="relative">
             <input
-              type = {type}
+              type = {type ? 'password' : 'text'}
               placeholder="Password"
               className="text-[#939CA3] font-popin h-[40px] rounded-[8px] w-[410px] pt-[12px] pb-[12px] pl-[12px] outline-none"
             />
-            <div onClick={handleToggale} className="text-[#6d747a] w-[16px] h-[16px] absolute right-3.5 top-2.5">
-              {Icon ? <IoIosEyeOff size={20}/> : <IoMdEye size={20}/>}
+            <div className="text-[#6d747a] w-[16px] h-[16px] absolute right-3.5 top-2.5">
+              {Icon ? <IoIosEyeOff size={20} onClick={handleToggale}/> : <IoMdEye size={20} onClick={handleToggale}/>}
             
             </div>
             
@@ -215,17 +207,20 @@ function Main() {
 
   return (
     <>
-      <div className="w-[1440px] h-[678px] mx-auto bg-[#f7f5f9] flex">
+      <div className="md:w-[1440px] md:h-[678px] bg-[#f7f5f9] md:flex w-[360px] h-[720px] mx-auto">
         {/* Left Section */}
-        <div className="h-[578px] w-[707px] mt-[100px] ml-[100px]">
-          <div className="w-[580px] h-[54px]">
-            <h1 className="font-popin font-semibold italic text-4xl">
+        <div className="md:h-[578px] md:w-[707px] md:mt-[100px] md:ml-[100px] w-[360px] h-[720px] mx-auto">
+          <div className="md:w-[580px] md:h-[54px] w-full h-[27px] text-center">
+            <h1 className="font-popin font-semibold italic md:text-4xl text-lg">
               Explore your <span className="text-[#0096c8]">hobby</span> or{" "}
               <span className="text-[#8064a2]">passion</span>
             </h1>
           </div>
-          <div className="w-[706px] h-[120px] mt-[32px]">
-            <p className="text-sm font-light font-popin leading-[30px] text- text-wrap">
+          <div className="md:w-[706px] md:h-[120px] mt-[32px] md:mx-auto w-[300px] mx-auto">
+            <p className="text-[12px] font-light font-popin leading-[22px] text-wrap md:hidden block w-[312px] h-[88px] text-center">
+            Sign-in to interact with a community of fellow hobbyists and an eco-system of experts, teachers, suppliers, classes, workshops, and places to practice, participate or perform.
+            </p>
+            <p className="text-sm font-light font-popin leading-[30px] text- text-wrap hidden md:block">
               Sign-in to interact with a community of fellow hobbyists and an
               eco-system of experts, teachers, suppliers, classes, workshops,
               and places to practice, participate or perform. Your hobby may be
@@ -233,7 +228,7 @@ function Main() {
               making, cooking, indoor or outdoor activities…
             </p>
           </div>
-          <div className="w-[706px] h-[60px] mt-[16px]">
+          <div className="w-[706px] h-[60px] mt-[16px] hidden md:block">
             <p className="text-sm font-light font-popin leading-[30px] text-start">
               If you are an expert or a seller, you can Add your Listing and
               promote yourself, your students, products, services or events. Hop
@@ -241,19 +236,19 @@ function Main() {
             </p>
           </div>
 
-          <div className="w-[697.07px] h-[216px] mt-[80px] flex justify-between">
-            <div className="w-[336.96px] h-[216px] flex justify-center items-end">
+          <div className="md:w-[697.07px] md:h-[216px] md:mt-[80px] flex justify-between w-[312px] h-[96.74px] mx-auto">
+            <div className="w-[336.96px] md:h-[216px] h-[115px] flex justify-center items-end">
               <img src={obj1} alt="" />
             </div>
 
-            <div className="w-[345.71px] h-[216px] flex justify-center items-end">
+            <div className="w-[345.71px] md:h-[216px] h-[115px] flex justify-center items-end">
               <img src={obj2} alt="" />
             </div>
           </div>
         </div>
 
         {/* Right Section Sign in*/}
-        <div className="sign-in h-[434px] w-[410px] mt-[103px] ml-[123px]">
+        <div className="md:h-[434px] md:w-[410px] md:mt-[103px] md:mr-[100px] w-[347px]">
           <div className="w-[169px] h-[34px] flex justify-between">
             <div className="w-[76px] h-[30px] cursor-pointer">
               <a
