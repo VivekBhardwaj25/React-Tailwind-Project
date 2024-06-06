@@ -17,81 +17,87 @@ import mic from "/src/assets/mic.svg";
 import play from "/src/assets/play_arrow.svg";
 import obj4 from "/src/assets/objects_4.svg";
 import obj5 from "/src/assets/objects_5.svg";
-import arrowforward from "/src/assets/arrow_forward.svg"
+import arrowforward from "/src/assets/arrow_forward.svg";
 import { IoMdEye, IoIosEyeOff } from "react-icons/io";
 
 function Main() {
   const [isLogin, setIsLogin] = useState(true);
-  const [Icon, setIcon] = useState(true)
-  const [type, setType] = useState(true)
+  const [Icon, setIcon] = useState(true);
+  const [type, setType] = useState(true);
 
   const handleToggale = () => {
-    if(type === true) {
-      setType(false)
-      setIcon(false)
+    if (type === true) {
+      setType(false);
+      setIcon(false);
     } else {
-      setType(true)
-      setIcon(true)
+      setType(true);
+      setIcon(true);
     }
-  }
- 
-
+  };
 
   const LogIn = () => {
     return (
       <div>
-        <div className="md:w-[410px] md:h-[96px] md:gap-y-[16px] mt-[32px] w-[312px] h-[78px]">
-          <div className="w-[410px] h-[40px] border border-[#8064A2] rounded-[8px] flex items-center">
+        <div className="md:w-[410px] md:h-[96px] gap-y-[16px] mt-[32px] h-[78px]">
+          <div className="md:w-full h-[40px] border border-[#8064A2] rounded-[8px] flex items-center w-[312px] mx-auto">
             <img src={google} alt="" className="w-[16px] h-[16px] ml-[24px]" />
-            <a href="" className="font-popin text-sm text-center md:ml-[88px]">
+            <a
+              href=""
+              className="font-popin text-sm text-center md:ml-[88px] ml-[66px]"
+            >
               Continue with Google
             </a>
           </div>
-          <div className="w-[410px] h-[40px] border border-[#8064A2] rounded-[8px] flex items-center mt-[16px]">
+          <div className="md:w-full h-[40px] border border-[#8064A2] rounded-[8px] flex items-center mt-[16px] w-[312px] mx-auto">
             <img
               src={facebook}
               alt=""
               className="w-[16px] h-[16px] ml-[24px]"
             />
-            <a href="" className="font-popin text-sm text-center ml-[88px]">
+            <a
+              href=""
+              className="font-popin text-sm text-center md:ml-[88px] ml-[66px]"
+            >
               Continue with Facebook
             </a>
           </div>
         </div>
 
-        <div className="w-[410px] h-[16px] mt-[28px] flex items-center justify-between">
-          <div className="w-[149px] h-[2px] bg-[#CED4DA]"></div>
+        <div className="md:w-[410px] md:h-[16px] md:mt-[28px] mt-[30px] flex items-center justify-between w-[312px] mx-auto">
+          <div className="md:w-[149px] w-[100px] h-[2px] bg-[#CED4DA]"></div>
           <div className="w-[97px] h-[16px] flex item center">
-            <span className="text-[12px] font-popin font-semibold">
+            <span className="md:text-[12px] text-[12px] font-popin font-semibold">
               Or connect with
             </span>
           </div>
-          <div className="w-[149px] h-[2px] bg-[#CED4DA]"></div>
+          <div className="md:w-[149px] w-[100px] h-[2px] bg-[#CED4DA]"></div>
         </div>
 
-        <div className="w-[410px] h-[96px] flex flex-col gap-y-[16px] mt-[28px]">
+        <div className="md:w-[410px] md:h-[96px] flex flex-col gap-y-[16px] md:mt-[28px] mt-[20px]">
           <input
             type="email"
             placeholder="Email"
-            className="text-[#939CA3] font-popin h-[40px] rounded-[8px] w-[410px] pt-[12px] pb-[12px] pl-[12px] outline-none"
-            
+            className="text-[#939CA3] font-popin h-[40px] rounded-[8px] md:w-[410px] w-[312px] pt-[12px] pb-[12px] pl-[12px] outline-none mx-auto"
           />
-          <div className="relative">
+          <div className="relative mx-auto">
             <input
-              type = {type ? 'password' : 'text'}
+              type={type ? "password" : "text"}
               placeholder="Password"
-              className="text-[#939CA3] font-popin h-[40px] rounded-[8px] w-[410px] pt-[12px] pb-[12px] pl-[12px] outline-none"
+              className="text-[#939CA3] font-popin h-[40px] rounded-[8px] md:w-[410px] pt-[12px] pb-[12px] pl-[12px] outline-none w-[312px]"
             />
             <div className="text-[#6d747a] w-[16px] h-[16px] absolute right-3.5 top-2.5">
-              {Icon ? <IoIosEyeOff size={20} onClick={handleToggale}/> : <IoMdEye size={20} onClick={handleToggale}/>}
-            
+              {Icon ? (
+                <IoIosEyeOff size={20} onClick={handleToggale} />
+              ) : (
+                <IoMdEye size={20} onClick={handleToggale} />
+              )}
             </div>
-            
+
             <div></div>
           </div>
         </div>
 
-        <div className="w-[410px] h-[16px] flex justify-between mt-[24px]">
+        <div className="md:w-[410px] h-[16px] flex justify-between mt-[24px] w-[312px] mx-auto">
           <div className="w-[116px] h-[16px] flex items-center">
             <input
               type="checkbox"
@@ -118,8 +124,8 @@ function Main() {
           </div>
         </div>
 
-        <div className="mt-[24px]">
-          <button className="w-[410px] h-[40px] border border-[#8064a2] bg-[#8064a2] text-[#ffffff] rounded-[8px] text-center font-popin font-semibold text-sm hover:bg-[#634e7d]">
+        <div className="mt-[24px] md:w-[410px] w-[312px] md:mx-0 mx-auto">
+          <button className="md:w-[410px] w-[312px] h-[40px] border border-[#8064a2] bg-[#8064a2] text-[#ffffff] rounded-[8px] text-center font-popin font-semibold text-sm hover:bg-[#634e7d]">
             Continue
           </button>
         </div>
@@ -130,52 +136,65 @@ function Main() {
   const JionIn = () => {
     return (
       <div>
-        <div className="w-[410px] h-[96px] gap-y-[16px] mt-[32px]">
-          <div className="w-[410px] h-[40px] border border-[#8064A2] rounded-[8px] flex items-center">
+        <div className="md:w-[410px] md:h-[96px] gap-y-[16px] mt-[32px] h-[78px]">
+          <div className="md:w-full w-[312px] mx-auto h-[40px] border border-[#8064A2] rounded-[8px] flex items-center">
             <img src={google} alt="" className="w-[16px] h-[16px] ml-[24px]" />
-            <a href="" className="font-popin text-sm text-center ml-[88px]">
+            <a
+              href=""
+              className="font-popin text-sm text-center md:ml-[88px] ml-[66px]"
+            >
               Continue with Google
             </a>
           </div>
-          <div className="w-[410px] h-[40px] border border-[#8064A2] rounded-[8px] flex items-center mt-[16px]">
+          <div className="md:w-[410px] h-[40px] border border-[#8064A2] rounded-[8px] flex items-center mt-[16px] w-[312px] mx-auto">
             <img
               src={facebook}
               alt=""
               className="w-[16px] h-[16px] ml-[24px]"
             />
-            <a href="" className="font-popin text-sm text-center ml-[88px]">
+            <a
+              href=""
+              className="font-popin text-sm text-center md:ml-[88px] ml-[66px]"
+            >
               Continue with Facebook
             </a>
           </div>
         </div>
 
-        <div className="w-[410px] h-[16px] mt-[28px] flex items-center justify-between">
-          <div className="w-[149px] h-[2px] bg-[#CED4DA]"></div>
+        <div className="md:w-[410px] w-[312px] mx-auto h-[16px] mt-[28px] flex items-center justify-between">
+          <div className="md:w-[149px] w-[100px] h-[2px] bg-[#CED4DA]"></div>
           <div className="w-[97px] h-[16px] flex item center">
             <span className="text-[12px] font-popin font-semibold">
               Or connect with
             </span>
           </div>
-          <div className="w-[149px] h-[2px] bg-[#CED4DA]"></div>
+          <div className="md:w-[149px] w-[100px] h-[2px] bg-[#CED4DA]"></div>
         </div>
 
-        <div className="w-[410px] h-[96px] flex flex-col gap-y-[16px] mt-[28px]">
+        <div className="md:w-[410px] md:h-[96px] flex flex-col gap-y-[16px] mt-[28px]">
           <input
             type="email"
             placeholder="Email"
-            className="text-[#939CA3] font-popin h-[40px] rounded-[8px] w-[410px] pt-[12px] pb-[12px] pl-[12px] outline-none"
+            className="text-[#939CA3] font-popin h-[40px] rounded-[8px] md:w-[410px] pt-[12px] pb-[12px] pl-[12px] outline-none w-[312px] mx-auto"
           />
-          <div className="">
+          <div className="mx-auto relative">
             <input
-              type="password"
+              type={type ? "password" : "text"}
               placeholder="Password"
-              className="text-[#939CA3] font-popin h-[40px] rounded-[8px] w-[410px] pt-[12px] pb-[12px] pl-[12px] outline-none"
+              className="text-[#939CA3] font-popin h-[40px] rounded-[8px] md:w-[410px] pt-[12px] pb-[12px] pl-[12px] outline-none w-[312px] mx-auto"
             />
+            <div className="text-[#6d747a] w-[16px] h-[16px] absolute right-3.5 top-2.5">
+              {Icon ? (
+                <IoIosEyeOff size={20} onClick={handleToggale} />
+              ) : (
+                <IoMdEye size={20} onClick={handleToggale} />
+              )}
+            </div>
             <div></div>
           </div>
         </div>
 
-        <div className="w-[406px] h-[16px] flex justify-between mt-[4px]">
+        <div className="md:w-[406px] w-[312px] mx-auto h-[16px] flex justify-between mt-[4px]">
           <div className="w-[186px] h-[16px] flex items-center gap-x-[2px]">
             <div className="w-[60px] h-[4px] rounded-[2px] bg-[#ffffff]"></div>
             <div className="w-[60px] h-[4px] rounded-[2px] bg-[#ffffff]"></div>
@@ -188,16 +207,16 @@ function Main() {
           </div>
         </div>
 
-        <div className="w-[402px] h-[18px] mt-[12px] mx-auto">
-          <p className="f font-popin font-normal text-[12px] text-[#6D747A]">
+        <div className="md:w-[402px] w-[312px] h-[18px] mt-[12px] mx-auto">
+          <p className="f font-popin font-normal md:text-[12px] text-[9.2px] text-[#6D747A]">
             By continuing, you agree to our{" "}
             <span className="text-black">Terms of Service</span> and{" "}
             <span className="text-black">Privacy Policy</span>
           </p>
         </div>
 
-        <div className="mt-[12px]">
-          <button className="w-[410px] h-[40px] bg-[#8064A2] text-[#ffffff] rounded-[8px] text-center font-popin font-semibold text-sm hover:bg-[#634e7d]">
+        <div className="mt-[12px] md:w-[410px] w-[312px] md:mx-0 mx-auto">
+          <button className="md:w-[410px] w-[312px] h-[40px] bg-[#8064A2] text-[#ffffff] rounded-[8px] text-center font-popin font-semibold text-sm hover:bg-[#634e7d]">
             Agree and Continue
           </button>
         </div>
@@ -207,7 +226,7 @@ function Main() {
 
   return (
     <>
-      <div className="md:w-[1440px] md:h-[678px] bg-[#f7f5f9] md:flex w-[360px] h-[720px] mx-auto border-[3px]">
+      <div className="md:w-[1440px] md:h-[678px] bg-[#f7f5f9] md:flex w-[360px] h-[720px] mx-auto">
         {/* Left Section */}
         <div className="md:h-[578px] md:w-[707px] md:mt-[100px] md:ml-[100px] w-[360px] h-[720px] mx-auto">
           <div className="md:w-[580px] md:h-[54px] w-full h-[27px] text-center">
@@ -218,7 +237,9 @@ function Main() {
           </div>
           <div className="md:w-[706px] md:h-[120px] mt-[32px] md:mx-auto w-[300px] mx-auto">
             <p className="text-[12px] font-light font-popin leading-[22px] text-wrap md:hidden block w-[312px] h-[88px] text-center">
-            Sign-in to interact with a community of fellow hobbyists and an eco-system of experts, teachers, suppliers, classes, workshops, and places to practice, participate or perform.
+              Sign-in to interact with a community of fellow hobbyists and an
+              eco-system of experts, teachers, suppliers, classes, workshops,
+              and places to practice, participate or perform.
             </p>
             <p className="text-sm font-light font-popin leading-[30px] text- text-wrap hidden md:block">
               Sign-in to interact with a community of fellow hobbyists and an
@@ -248,13 +269,17 @@ function Main() {
         </div>
 
         {/* Right Section Sign in*/}
-        <div className="md:h-[434px] md:w-[410px] md:mt-[103px] md:mr-[100px] w-[347px] mt-[-400px]">
-          <div className="w-[169px] h-[34px] flex justify-between">
+        <div className="md:h-[434px] md:w-[410px] md:mt-[103px] md:mr-[100px] w-[360px] mt-[-430px]">
+          <div className="md:w-[169px] md:h-[34px] md:flex md:justify-between md:items-start w-[160px] flex justify-between mx-auto md:mx-0">
             <div className="w-[76px] h-[30px] cursor-pointer">
               <a
-                onClick = {() => setIsLogin(true)}
+                onClick={() => setIsLogin(true)}
                 href="#"
-                className={`${isLogin === true ? 'text-[#8064a2] font-popin font-semibold underline underline-offset-8 decoration-[2px] text-xl' : 'text-[#939CA3] font-semibold font-popin text-xl'}`}
+                className={`${
+                  isLogin === true
+                    ? "text-[#8064a2] font-popin font-semibold underline underline-offset-8 decoration-[2px] text-xl"
+                    : "text-[#939CA3] font-semibold font-popin text-xl"
+                }`}
               >
                 Sign in
               </a>
@@ -263,7 +288,11 @@ function Main() {
               <a
                 href="#"
                 onClick={() => setIsLogin(false)}
-                className={`${isLogin === false ? 'text-[#8064a2] font-popin font-semibold text-xl underline underline-offset-8 decoration-[2px]' : 'text-[#939CA3] font-popin font-semibold text-xl'}`}
+                className={`${
+                  isLogin === false
+                    ? "text-[#8064a2] font-popin font-semibold text-xl underline underline-offset-8 decoration-[2px]"
+                    : "text-[#939CA3] font-popin font-semibold text-xl"
+                }`}
               >
                 Join in
               </a>
@@ -485,7 +514,6 @@ function Main() {
 
       {/* Fivft Section */}
       <div className="w-[1440px] h-[662px] mx-auto bg-[#F7FDFF] flex flex-col justify-between relative">
-
         <div className="w-[1240px] h-[130px] flex flex-col justify-between mx-auto mt-[100px]">
           <p className="font-popin font-medium text-4xl italic">
             Your <span className="text-[#8064A2]">Hobby</span>, Your{" "}
@@ -498,24 +526,29 @@ function Main() {
         </div>
 
         <div className="flex flex-col items-center gap-y-[7px] absolute right-4 top-44">
-        <div className="w-[40px] h-[40px] rounded-full bg-[#ffffff] flex justify-center items-center cursor-pointer shadow-md">
-          <a href="#home">
-          <img src={arrowforward} alt="" className="w-[16px] h-[16px] origin rotate-90"/>
-          </a>
-        </div>
+          <div className="w-[40px] h-[40px] rounded-full bg-[#ffffff] flex justify-center items-center cursor-pointer shadow-md">
+            <a href="#home">
+              <img
+                src={arrowforward}
+                alt=""
+                className="w-[16px] h-[16px] origin rotate-90"
+              />
+            </a>
+          </div>
 
-        <div className="w-[130px] h-[18px] rounded-sm shadow-md flex justify-center items-center">
-          <p className="text-[#8064A2] font-popin font-medium text-[10px]">Go to top (Ctrl+Home)</p>
-        </div>
+          <div className="w-[130px] h-[18px] rounded-sm shadow-md flex justify-center items-center">
+            <p className="text-[#8064A2] font-popin font-medium text-[10px]">
+              Go to top (Ctrl+Home)
+            </p>
+          </div>
         </div>
 
         <div className="flex justify-center mb-[30px]">
           <div className="w-[1240px] h-[302px] flex justify-between items-center">
-              <img src={obj4} alt="" className="w-[531px] h-[280px]"/>
-              <img src={obj5} alt="" className="w-[638px] h-[300px]"/>
+            <img src={obj4} alt="" className="w-[531px] h-[280px]" />
+            <img src={obj5} alt="" className="w-[638px] h-[300px]" />
           </div>
         </div>
-
       </div>
     </>
   );
