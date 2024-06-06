@@ -207,11 +207,11 @@ function Main() {
 
   return (
     <>
-      <div className="md:w-[1440px] md:h-[678px] bg-[#f7f5f9] md:flex w-[360px] h-[720px] mx-auto">
+      <div className="md:w-[1440px] md:h-[678px] bg-[#f7f5f9] md:flex w-[360px] h-[720px] mx-auto border-[3px]">
         {/* Left Section */}
         <div className="md:h-[578px] md:w-[707px] md:mt-[100px] md:ml-[100px] w-[360px] h-[720px] mx-auto">
           <div className="md:w-[580px] md:h-[54px] w-full h-[27px] text-center">
-            <h1 className="font-popin font-semibold italic md:text-4xl text-lg">
+            <h1 className="font-popin font-semibold italic md:text-4xl text-lg pt-[10px]">
               Explore your <span className="text-[#0096c8]">hobby</span> or{" "}
               <span className="text-[#8064a2]">passion</span>
             </h1>
@@ -248,7 +248,7 @@ function Main() {
         </div>
 
         {/* Right Section Sign in*/}
-        <div className="md:h-[434px] md:w-[410px] md:mt-[103px] md:mr-[100px] w-[347px]">
+        <div className="md:h-[434px] md:w-[410px] md:mt-[103px] md:mr-[100px] w-[347px] mt-[-400px]">
           <div className="w-[169px] h-[34px] flex justify-between">
             <div className="w-[76px] h-[30px] cursor-pointer">
               <a
@@ -274,7 +274,7 @@ function Main() {
       </div>
 
       {/* Second Section */}
-      <div className="md:h-[818px] w-[1440px] mx-auto flex items-center justify-center">
+      <div className="md:h-[818px] md:w-[1440px] mx-auto flex items-center justify-center">
         <div className="md:w-[1240px] md:h-[618px] md:flex md:content-between md:justify-between md:flex-wrap mt-12">
           <div className="md:w-[608px] md:h-[297px] rounded-[8px] border-[1px] border-[#CED4DA] md:flex md:flex-col md:justify-center md:items-start px-11 py-10 cursor-pointer w-[312px] h-[216] flex justify-center items-center flex-col mb-6">
             <div className="md:w-[147px] md:h-[40px] flex justify-between items-center w-[102px] h-[32px]">
