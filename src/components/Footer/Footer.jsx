@@ -11,7 +11,7 @@ import youtube from "/src/assets/youtube.svg"
 function Footer() {
   return (
     <div className="w-full h-[380px] mx-auto flex flex-col justify-between">
-      <div className="w-[1217px] h-[182px] mx-auto mt-[60px] flex justify-between">
+      <div className="w-[1217px] h-[182px] mx-auto mt-[60px] flex justify-between flex-wrap">
         <div className="w-[90px] h-[156px]">
           <h1 className="font-popin font-bold text-sm mb-4">Hobbycue</h1>
           <p>
@@ -96,7 +96,6 @@ function Footer() {
             </a>
           </p>
         </div>
-
         <div className="w-[360px] h-[182px] flex flex-col justify-between">
           
           <div>

@@ -405,24 +405,24 @@ function Main() {
       </div>
 
       {/* Third Section */}
-      <div className="w-[1440px] h-[484px] bg-[#F7FDFF] mx-auto flex justify-center items-center">
-        <div className="w-[1240px] h-[284px] border-[1px] flex items-center justify-center">
+      <div className="md:w-[1440px] md:h-[484px] bg-[#F7FDFF] mx-auto flex justify-center items-center w-[360px] h-[332px]">
+        <div className="md:w-[1240px] md:h-[284px] border-[1px] flex items-center justify-center w-[312px] h-[236px]">
           <div className="w-[1160px] h-[204px] flex flex-col justify-between">
-            <div className="w-[232px] h-[40px] flex justify-between">
-              <img src={add} alt="" className="w-[33.33px] h-[33.33px]" />
-              <span className="font-popin font-semibold text-2xl">
+            <div className="md:w-[232px] md:h-[40px] flex justify-between w-[166px] h-[32px] mx-auto md:mx-0">
+              <img src={add} alt="" className="md:w-[33.33px] md:h-[33.33px] w-[26.67px] h-[26.67px]" />
+              <span className="font-popin font-semibold md:text-2xl text-lg">
                 Add your own
               </span>
             </div>
-            <div className="">
-              <p className="font-popin font-light text-lg">
+            <div className="md:w-[1160px] w-[264px] h-[100px] mx-auto md:mx-0 flex items-center">
+              <p className="font-popin font-light md:text-lg text-xs text-center md:text-start">
                 Are you a teacher or expert? Do you sell or rent out equipment,
                 venue or event tickets? Or, you know someone who should be on
                 hobbycue? Go ahead and Add your Own page
               </p>
             </div>
 
-            <button className="w-[121px] h-[40px] rounded-lg border border-[#8064A2] font-popin font-semibold text-sm text-[#8064A2]">
+            <button className="md:w-[121px] md:h-[40px] rounded-lg border border-[#8064A2] font-popin font-semibold md:text-sm text-xs text-[#8064A2] w-[264px] h-[32px] mx-auto md:mx-0">
               Add new
             </button>
           </div>
@@ -430,21 +430,21 @@ function Main() {
       </div>
 
       {/* Fourth Section */}
-      <div className="w-[1440px] h-[672px] mx-auto flex justify-center items-center">
-        <div className="bg-[#F7F5F9] w-[1240px] h-[472px] flex flex-col justify-between p-10">
-          <div className="w-[221px] h-[40px] flex justify-between">
+      <div className="md:w-[1440px] md:h-[672px] mx-auto flex justify-center items-center w-[360px] h-[708px]">
+        <div className="bg-[#F7F5F9] md:w-[1240px] md:h-[472px] flex flex-col md:justify-between p-10 w-[312px] h-[612px]">
+          <div className="md:w-[221px] md:h-[40px] flex justify-between w-[158px] h-[32px] mx-auto md:mx-0">
             <img
               src={quot}
               alt=""
-              className="w-[40px] h-[40px] origin-center rotate-180"
+              className="md:w-[40px] md:h-[40px] w-[26.66px] h-[26.66px] origin-center rotate-180"
             />
-            <span className="font-popin font-semibold text-2xl">
+            <span className="font-popin font-semibold md:text-2xl text-lg">
               Testimonials
             </span>
           </div>
 
-          <div className="w-[1160px]">
-            <p className="font-popin font-light text-lg text-[#6D747A]">
+          <div className="md:w-[1160px] w-full h-[300px] md:mx-0 mx-auto mt-[12px] text-center md:text-start md:mt-[32px]">
+            <p className="font-popin font-light md:text-lg text-xs text-[#6D747A]">
               In a fast growing and ever changing city like Bangalore, it
               sometimes becomes very difficult to find or connect with like
               minded people. Websites like hobbycue.com is a great service which
@@ -459,19 +459,20 @@ function Main() {
             </p>
           </div>
 
-          <div className="w-[1160px] flex justify-between">
-            <div className="w-[776px] h-[100px] bg-[#CCC1DA] rounded-lg flex justify-between items-center px-8">
-              <div className="w-[592px] h-[40px] flex items-center justify-between">
-                <div className="h-[40px] w-[40px] rounded-full bg-[#ffffff] flex items-center justify-center cursor-pointer">
-                  <img src={play} alt="" className="w-[24px] h-[24px]" />
+          <div className="md:w-[1160px] md:flex md:justify-between md:flex-row flex flex-col-reverse mt-6 md:mt-0">
+            <div className="md:w-[776px] md:h-[100px] bg-[#CCC1DA] rounded-lg flex justify-between items-center md:px-8 px-3 w-[264px] h-[64px] mx-[-16px] md:mx-0">
+
+              <div className="md:w-[592px] h-[40px] flex items-center justify-between">
+                <div className="md:h-[40px] md:w-[40px] w-[24px] h-[24px] rounded-full bg-[#ffffff] flex items-center justify-center cursor-pointer">
+                  <img src={play} alt="" className="md:w-[24px] md:h-[24px] w-[16px] h-[16px]" />
                 </div>
 
-                <div className="flex relative">
-                  <div className="w-[12px] h-[12px] bg-[#8064A2] rounded-full absolute left-[-1px] top-[-4.3px]"></div>
-                  <div className="w-[468px] h-[2px] bg-[#ffffff] rounded-[2px]"></div>
+                <div className="flex relative ml-2 md:ml-0">
+                  <div className="md:w-[12px] md:h-[12px] w-[8px] h-[8px] bg-[#8064A2] rounded-full absolute md:left-[-1px] md:top-[-4.3px] left-[-2px] top-[-3px]"></div>
+                  <div className="md:w-[468px] w-[123px] h-[2px] bg-[#ffffff] rounded-[2px]"></div>
                 </div>
 
-                <div className="w-[26px] h-[16px] font-popin font-normal text-xs">
+                <div className="md:w-[26px] md:h-[16px] w-[17px] h-[12px] font-popin font-normal text-xs ml-2 md:ml-0">
                   0:00
                 </div>
               </div>
@@ -479,35 +480,36 @@ function Main() {
                 <img
                   src={actres}
                   alt=""
-                  className="h-[60px] w-[60px] rounded-full"
+                  className="md:h-[60px] md:w-[60px] w-[40px] h-[40px] rounded-full"
                 />
                 <img
                   src={mic}
                   alt=""
-                  className="absolute w-[18.46px] h-[25.33px] bottom-1 right-12"
+                  className="absolute md:w-[18.46px] md:h-[25.33px] w-[923.px] h-[12.67px] md:bottom-1 md:right-12 right-8 bottom-2"
                 />
               </div>
             </div>
 
-            <div className="w-[304px] h-[100px] flex justify-between">
+            <div className="md:w-[304px] md:h-[100px] flex justify-between w-[236px] h-[60px] mb-8 md:mb-0 mx-[-16px] md:mx-0">
               <img
                 src={actres}
                 alt=""
-                className="w-[100px] h-[100px] rounded-full"
+                className="md:w-[100px] md:h-[100px] w-[60px] h-[60px] rounded-full"
               />
               <div className="flex flex-col justify-center">
                 <div>
-                  <span className="font-popin font-semibold text-lg text-[#8064A2]">
+                  <span className="font-popin font-semibold md:text-lg text-[#8064A2]">
                     Shubha Nagarajan
                   </span>
                 </div>
                 <div>
-                  <span className="font-popin font-normal text-sm text-[#0096C8]">
+                  <span className="font-popin font-normal md:text-sm text-xs text-[#0096C8]">
                     Shubha Nagarajan
                   </span>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
