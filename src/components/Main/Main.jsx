@@ -528,7 +528,7 @@ function Main() {
             <span className="text-[#0096C8]">Community...</span>
           </p>
 
-          <button className="md:w-[147px] md:h-[46px] w-[104px] h-[28px] rounded-lg text-[#ffffff] bg-[#8064A2] font-popin font-semibold md:text-xl text-sm flex-none items-center mt-[24px] md:mt-0">
+          <button className="md:w-[147px] md:h-[46px] w-[104px] h-[31px] rounded-lg text-[#ffffff] bg-[#8064A2] font-popin font-semibold md:text-xl text-sm flex-none items-center mt-[24px] md:mt-0">
             Get started
           </button>
         </div>

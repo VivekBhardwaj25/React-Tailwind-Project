@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <div
       id="home"
-      className="md:h-[80px] md:w-[1440px] md:mx-auto flex items-center justify-center w-[360px] h-[48px] mx-auto"
+      className="md:h-[80px] md:w-[1440px] md:mx-auto flex items-center justify-center w-[360px] h-[48px] mx-auto py-3 md:py-0"
     >
       <div className="flex items-center">
         <div className="md:w-[293px] md:h-[60px] my-[10px] w-[156.4px] h-[32px]">
@@ -66,7 +66,7 @@ function Navbar() {
           />
         </div>
         <div>
-          <img src={bellicon} alt="" className="w-[15.17px] h-[19.5px] ml-2"/>
+          <img src={bellicon} alt="" className="w-[15.17px] h-[19.5px] ml-[13px] md:ml-0"/>
         </div>
 
         <div>
