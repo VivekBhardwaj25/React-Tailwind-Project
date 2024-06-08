@@ -492,7 +492,7 @@ function Main() {
                 <img
                   src={mic}
                   alt=""
-                  className="absolute md:w-[18.46px] md:h-[25.33px] w-[923.px] h-[12.67px] md:bottom-1 md:right-12 right-6 bottom-2"
+                  className="absolute md:w-[18.46px] md:h-[25.33px] w-[923.px] h-[12.67px] md:bottom-1 md:right-12 right-5 bottom-2"
                 />
               </div>
             </div>

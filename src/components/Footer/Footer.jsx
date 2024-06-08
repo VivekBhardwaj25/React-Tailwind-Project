@@ -10,8 +10,8 @@ import youtube from "/src/assets/youtube.svg"
 
 function Footer() {
   return (
-    <div className="md:w-full md:h-[380px] mx-auto md:flex md:flex-col md:justify-between w-[360px] h-[796px]">
-      <div className="md:w-[1217px] md:h-[182px] md:mx-auto mt-[60px] md:flex md:flex-row md:justify-between w-[360px] flex flex-col gap-y-8">
+    <div className="w-full md:h-[380px] mx-auto md:flex md:flex-col md:justify-between h-[796px]">
+      <div className="md:w-[1217px] md:h-[182px] md:mx-auto mt-[60px] md:flex md:flex-row md:justify-between w-[360px] flex flex-col gap-y-8 pl-4 md:pl-0">
         <div className="w-[90px] h-[156px]">
           <h1 className="font-popin font-bold text-sm mb-4">Hobbycue</h1>
           <p>
