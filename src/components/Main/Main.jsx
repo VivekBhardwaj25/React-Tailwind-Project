@@ -409,7 +409,11 @@ function Main() {
         <div className="md:w-[1240px] md:h-[284px] border-[1px] flex items-center justify-center w-[312px] h-[236px]">
           <div className="w-[1160px] h-[204px] flex flex-col justify-between">
             <div className="md:w-[232px] md:h-[40px] flex justify-between w-[166px] h-[32px] mx-auto md:mx-0">
-              <img src={add} alt="" className="md:w-[33.33px] md:h-[33.33px] w-[26.67px] h-[26.67px]" />
+              <img
+                src={add}
+                alt=""
+                className="md:w-[33.33px] md:h-[33.33px] w-[26.67px] h-[26.67px]"
+              />
               <span className="font-popin font-semibold md:text-2xl text-lg">
                 Add your own
               </span>
@@ -461,10 +465,13 @@ function Main() {
 
           <div className="md:w-[1160px] md:flex md:justify-between md:flex-row flex flex-col-reverse mt-6 md:mt-0">
             <div className="md:w-[776px] md:h-[100px] bg-[#CCC1DA] rounded-lg flex justify-between items-center md:px-8 px-3 w-[264px] h-[64px] mx-[-16px] md:mx-0">
-
               <div className="md:w-[592px] h-[40px] flex items-center justify-between">
                 <div className="md:h-[40px] md:w-[40px] w-[24px] h-[24px] rounded-full bg-[#ffffff] flex items-center justify-center cursor-pointer">
-                  <img src={play} alt="" className="md:w-[24px] md:h-[24px] w-[16px] h-[16px]" />
+                  <img
+                    src={play}
+                    alt=""
+                    className="md:w-[24px] md:h-[24px] w-[16px] h-[16px]"
+                  />
                 </div>
 
                 <div className="flex relative ml-2 md:ml-0">
@@ -485,7 +492,7 @@ function Main() {
                 <img
                   src={mic}
                   alt=""
-                  className="absolute md:w-[18.46px] md:h-[25.33px] w-[923.px] h-[12.67px] md:bottom-1 md:right-12 right-8 bottom-2"
+                  className="absolute md:w-[18.46px] md:h-[25.33px] w-[923.px] h-[12.67px] md:bottom-1 md:right-12 right-6 bottom-2"
                 />
               </div>
             </div>
@@ -509,46 +516,47 @@ function Main() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
 
       {/* Fivft Section */}
-      <div className="w-[1440px] h-[662px] mx-auto bg-[#F7FDFF] flex flex-col justify-between relative">
-        <div className="w-[1240px] h-[130px] flex flex-col justify-between mx-auto mt-[100px]">
-          <p className="font-popin font-medium text-4xl italic">
+      <div className="md:w-[1440px] md:h-[662px] mx-auto bg-[#F7FDFF] flex flex-col justify-between relative w-[360px] h-[267px]">
+        <div className="md:w-[1240px] md:h-[130px] flex flex-col justify-between mx-auto md:mt-[100px] mt-[48px] w-[283px] h-[23px]">
+          <p className="font-popin font-medium md:text-4xl text-lg italic">
             Your <span className="text-[#8064A2]">Hobby</span>, Your{" "}
             <span className="text-[#0096C8]">Community...</span>
           </p>
 
-          <button className="w-[147px] h-[46px] rounded-lg text-[#ffffff] bg-[#8064A2] font-popin font-semibold text-xl">
+          <button className="md:w-[147px] md:h-[46px] w-[104px] h-[28px] rounded-lg text-[#ffffff] bg-[#8064A2] font-popin font-semibold md:text-xl text-sm flex-none items-center mt-[24px] md:mt-0">
             Get started
           </button>
         </div>
 
-        <div className="flex flex-col items-center gap-y-[7px] absolute right-4 top-44">
-          <div className="w-[40px] h-[40px] rounded-full bg-[#ffffff] flex justify-center items-center cursor-pointer shadow-md">
-            <a href="#home">
-              <img
-                src={arrowforward}
-                alt=""
-                className="w-[16px] h-[16px] origin rotate-90"
-              />
-            </a>
-          </div>
+        <div className="hidden md:block">
+          <div className="flex flex-col items-center gap-y-[7px] absolute right-4 top-44 ">
+            <div className="w-[40px] h-[40px] rounded-full bg-[#ffffff] flex justify-center items-center cursor-pointer shadow-md">
+              <a href="#home">
+                <img
+                  src={arrowforward}
+                  alt=""
+                  className="w-[16px] h-[16px] origin rotate-90"
+                />
+              </a>
+            </div>
 
-          <div className="w-[130px] h-[18px] rounded-sm shadow-md flex justify-center items-center">
-            <p className="text-[#8064A2] font-popin font-medium text-[10px]">
-              Go to top (Ctrl+Home)
-            </p>
+            <div className="w-[130px] h-[18px] rounded-sm shadow-md flex justify-center items-center">
+              <p className="text-[#8064A2] font-popin font-medium text-[10px]">
+                Go to top (Ctrl+Home)
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="flex justify-center mb-[30px]">
-          <div className="w-[1240px] h-[302px] flex justify-between items-center">
-            <img src={obj4} alt="" className="w-[531px] h-[280px]" />
-            <img src={obj5} alt="" className="w-[638px] h-[300px]" />
+        <div className="flex justify-center md:mb-[30px]">
+          <div className="md:w-[1240px] md:h-[302px] w-[312.07px] h-[76px] flex justify-between items-center">
+            <img src={obj4} alt="" className="md:w-[531px] md:h-[280px] w-[133.63px] h-[70.46px]" />
+            <img src={obj5} alt="" className="md:w-[638px] md:h-[300px] w-[160.56px] h-[76px]" />
           </div>
         </div>
       </div>

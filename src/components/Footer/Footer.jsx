@@ -10,8 +10,8 @@ import youtube from "/src/assets/youtube.svg"
 
 function Footer() {
   return (
-    <div className="w-full h-[380px] mx-auto flex flex-col justify-between">
-      <div className="w-[1217px] h-[182px] mx-auto mt-[60px] flex justify-between flex-wrap">
+    <div className="md:w-full md:h-[380px] mx-auto md:flex md:flex-col md:justify-between w-[360px] h-[796px]">
+      <div className="md:w-[1217px] md:h-[182px] md:mx-auto mt-[60px] md:flex md:flex-row md:justify-between w-[360px] flex flex-col gap-y-8">
         <div className="w-[90px] h-[156px]">
           <h1 className="font-popin font-bold text-sm mb-4">Hobbycue</h1>
           <p>
@@ -147,7 +147,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="w-full bg-[#F7F5F9] h-[78px] font-popin font-medium text-sm text-black flex justify-center items-center">
+      <div className="w-full bg-[#F7F5F9] md:h-[78px] h-[40px] font-popin font-medium md:text-sm text-xs text-black flex justify-center items-center mt-8 md:mt-0">
         <p>© Purple Cues Private Limited</p>
       </div>
     </div>
