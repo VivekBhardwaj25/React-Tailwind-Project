@@ -19,6 +19,10 @@ import obj4 from "/src/assets/objects_4.svg";
 import obj5 from "/src/assets/objects_5.svg";
 import arrowforward from "/src/assets/arrow_forward.svg";
 import { IoMdEye, IoIosEyeOff } from "react-icons/io";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdGroups } from "react-icons/md";
+import { MdShoppingBasket } from "react-icons/md";
+import { FaCalendarCheck } from "react-icons/fa6";
 
 function Main() {
   const [isLogin, setIsLogin] = useState(true);
@@ -305,13 +309,13 @@ function Main() {
       {/* Second Section */}
       <div className="md:h-[818px] md:w-[1440px] mx-auto flex items-center justify-center">
         <div className="md:w-[1240px] md:h-[618px] md:flex md:content-between md:justify-between md:flex-wrap mt-12">
-          <div className="md:w-[608px] md:h-[297px] rounded-[8px] border-[1px] border-[#CED4DA] md:flex md:flex-col md:justify-center md:items-start px-11 py-10 cursor-pointer w-[312px] h-[216] flex justify-center items-center flex-col mb-6">
+          <div className="group md:w-[608px] md:h-[297px] rounded-[8px] border-[1px] border-[#8064A2] md:flex md:flex-col md:justify-center md:items-start px-11 py-10 cursor-pointer w-[312px] h-[216] flex justify-center items-center flex-col mb-6 hover:bg-[#8064A2] transition ease-in-out duration-100 hover:text-[#ffffff]">
             <div className="md:w-[147px] md:h-[40px] flex justify-between items-center w-[102px] h-[32px]">
-              <img
-                src={peoples}
-                alt=""
-                className="md:w-[40px] md:h-[20px] w-[32px] h-[16px]"
-              />
+              <div className="md:w-[40px] md:h-[20px] w-[32px] h-[16px] group-hover:text-[#ffffff] flex justify-center items-center text-[#8064A2]">
+                <MdGroups className="md:size-10 size-7"/>
+              </div>
+           
+
               <span className="md:text-[24px] text-[18px] font-popin font-semibold">
                 People
               </span>
@@ -324,18 +328,17 @@ function Main() {
               </p>
             </div>
 
-            <button className="md:w-[122px] md:h-[40px] border-[1px] border-[#8064A2] rounded-lg text-[#8064A2] font-popin font-semibold md:text-sm text-[12px] mt-8 cursor-pointer w-[264px] h-[32px]">
+            <button className="md:w-[122px] md:h-[40px] border-[1px] border-[#8064A2] rounded-lg text-[#8064A2] font-popin font-semibold md:text-sm text-[12px] mt-8 cursor-pointer w-[264px] h-[32px] group-hover:border-[#ffffff] group-hover:text-white">
               Connect
             </button>
           </div>
 
-          <div className="md:w-[608px] md:h-[297px] rounded-[8px] border-[1px] border-[#CED4DA] md:flex md:flex-col md:justify-center md:items-start px-11 py-10 cursor-pointer w-[312px] h-[216] flex justify-center items-center flex-col mb-6">
+          <div className="md:w-[608px] md:h-[297px] rounded-[8px] border-[1px] border-[#77933C] md:flex md:flex-col md:justify-center md:items-start px-11 py-10 cursor-pointer w-[312px] h-[216] flex justify-center items-center flex-col mb-6 group hover:bg-[#77933C] hover:text-[#ffffff] transition ease-in-out duration-100">
             <div className="md:w-[131px] md:h-[40px] flex justify-between items-center w-[102px] h-[32px]">
-              <img
-                src={location}
-                alt=""
-                className="md:w-[23px] md:h-[33px] w-[32px] h-[16px]"
-              />
+              <div className="md:w-[25px] md:h-[33px] w-[32px] h-[16px] group-hover:text-[#ffffff] flex justify-center items-center text-[#77933C]">
+                <FaLocationDot className="md:size-8 size-6"/>
+              </div>
+
               <span className="md:text-[24px] text-[18px] font-popin font-semibold">
                 People
               </span>
@@ -349,18 +352,17 @@ function Main() {
               </p>
             </div>
 
-            <button className="md:w-[122px] md:h-[40px] border-[1px] border-[#8064A2] rounded-lg text-[#8064A2] font-popin font-semibold md:text-sm text-[12px] mt-8 cursor-pointer w-[264px] h-[32px]">
+            <button className="md:w-[122px] md:h-[40px] border-[1px] border-[#8064A2] rounded-lg text-[#8064A2] font-popin font-semibold md:text-sm text-[12px] mt-8 cursor-pointer w-[264px] h-[32px] group-hover:text-white group-hover:border-[#ffffff]">
               Meet up
             </button>
           </div>
 
-          <div className="md:w-[608px] md:h-[297px] rounded-[8px] border-[1px] border-[#CED4DA] md:flex md:flex-col md:justify-center md:items-start px-11 py-10 cursor-pointer w-[312px] h-[216] flex justify-center items-center flex-col mb-6">
-            <div className="md:w-[160px] md:h-[40px] flex justify-between items-center w-[102px] h-[32px]">
-              <img
-                src={bag}
-                alt=""
-                className="md:w-[36.67px] md:h-[31.63px] w-[32px] h-[16px]"
-              />
+          <div className="md:w-[608px] md:h-[297px] rounded-[8px] border-[1px] border-[#C0504D] md:flex md:flex-col md:justify-center md:items-start px-11 py-10 cursor-pointer w-[312px] h-[216] flex justify-center items-center flex-col mb-6 group hover:bg-[#C0504D] hover:text-[#ffffff] transition ease-in-out duration-100">
+            <div className="md:w-[160px] md:h-[40px] flex justify-between items-center w-[107px] h-[32px]">
+              <div className="md:w-[36.67px] md:h-[31.63px] w-[32px] h-[16px] group-hover:text-[#ffffff] flex md:justify-center items-center text-[#C0504D]">
+                <MdShoppingBasket className="md:size-9 size-6" />
+              </div>
+
               <span className="md:text-[24px] text-[18px] font-popin font-semibold">
                 Product
               </span>
@@ -373,18 +375,18 @@ function Main() {
               </p>
             </div>
 
-            <button className="md:w-[122px] md:h-[40px] border-[1px] border-[#8064A2] rounded-lg text-[#8064A2] font-popin font-semibold md:text-sm text-[12px] mt-8 cursor-pointer w-[264px] h-[32px]">
+            <button className="md:w-[122px] md:h-[40px] border-[1px] border-[#8064A2] rounded-lg text-[#8064A2] font-popin font-semibold md:text-sm text-[12px] mt-8 cursor-pointer w-[264px] h-[32px] group-hover:text-[#ffffff] group-hover:border-white">
               Get it
             </button>
           </div>
 
-          <div className="md:w-[608px] md:h-[297px] rounded-[8px] border-[1px] border-[#CED4DA] md:flex md:flex-col md:justify-center md:items-start px-11 py-10 cursor-pointer w-[312px] h-[216] flex justify-center items-center flex-col mb-6">
-            <div className="md:w-[165px] md:h-[40px] flex justify-between items-center w-[102px] h-[32px]">
-              <img
-                src={check}
-                alt=""
-                className="md:w-[30px] md:h-[33.33px] w-[32px] h-[16px]"
-              />
+          <div className="md:w-[608px] md:h-[297px] rounded-[8px] border-[1px] border-[#0096C8] md:flex md:flex-col md:justify-center md:items-start px-11 py-10 cursor-pointer w-[312px] h-[216] flex justify-center items-center flex-col mb-6 transition ease-in-out duration-100 hover:bg-[#0096C8] hover:text-[#ffffff] group">
+            <div className="md:w-[165px] md:h-[40px] flex justify-between items-center w-[119px] h-[32px]">
+
+              <div className="md:w-[30px] md:h-[33.33px] w-[32px] h-[16px] group-hover:text-[#ffffff] flex justify-center items-center text-[#0096C8]">
+                <FaCalendarCheck className="md:size-8 size-[22px]" />
+              </div>
+             
               <span className="md:text-[24px] text-[18px] font-popin font-semibold">
                 Program
               </span>
@@ -397,7 +399,7 @@ function Main() {
               </p>
             </div>
 
-            <button className="md:w-[122px] md:h-[40px] border-[1px] border-[#8064A2] rounded-lg text-[#8064A2] font-popin font-semibold md:text-sm text-[12px] mt-8 cursor-pointer w-[264px] h-[32px]">
+            <button className="md:w-[122px] md:h-[40px] border-[1px] border-[#8064A2] rounded-lg text-[#8064A2] font-popin font-semibold md:text-sm text-[12px] mt-8 cursor-pointer w-[264px] h-[32px] group-hover:text-[#ffffff] group-hover:border-white">
               Attend
             </button>
           </div>
@@ -555,8 +557,16 @@ function Main() {
 
         <div className="flex justify-center md:mb-[30px]">
           <div className="md:w-[1240px] md:h-[302px] w-[312.07px] h-[76px] flex justify-between items-center">
-            <img src={obj4} alt="" className="md:w-[531px] md:h-[280px] w-[133.63px] h-[70.46px]" />
-            <img src={obj5} alt="" className="md:w-[638px] md:h-[300px] w-[160.56px] h-[76px]" />
+            <img
+              src={obj4}
+              alt=""
+              className="md:w-[531px] md:h-[280px] w-[133.63px] h-[70.46px]"
+            />
+            <img
+              src={obj5}
+              alt=""
+              className="md:w-[638px] md:h-[300px] w-[160.56px] h-[76px]"
+            />
           </div>
         </div>
       </div>

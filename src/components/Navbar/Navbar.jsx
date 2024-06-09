@@ -10,6 +10,32 @@ import shopycard from "/src/assets/shop_card.svg";
 import line from "/src/assets/line_icon.svg";
 
 function Navbar() {
+  const exploreHover = () => {
+    return (
+      <div>
+        <div className="w-[220px] h-[210px]">
+          <ul>
+            <li className="w-[220px] h-[42px] font-popin font-normal text-sm text-[#6D747A]">
+              People - Community
+            </li>
+            <li className="w-[220px] h-[42px] font-popin font-normal text-sm text-[#6D747A]">
+              Places - Venues
+            </li>
+            <li className="w-[220px] h-[42px] font-popin font-normal text-sm text-[#6D747A]">
+              Programs - Events
+            </li>
+            <li className="w-[220px] h-[42px] font-popin font-normal text-sm text-[#6D747A]">
+              Products - Store
+            </li>
+            <li className="w-[220px] h-[42px] font-popin font-normal text-sm text-[#6D747A]">
+              Blogs
+            </li>
+          </ul>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div
       id="home"
@@ -23,7 +49,7 @@ function Navbar() {
           <input
             type="text"
             placeholder="search here.."
-            className="font-popin border border-gray-300 px-1 py-2 text-sm rounded-s-md w-[300px] h-[40px] outline-none hidden md:block"
+            className="font-popin border border-gray-300 px-1 py-2 text-sm rounded-s-md w-[300px] h-[40px] outline-none hidden md:block bg-[#F8F9FA]"
           />
           <span className="">
             <img
@@ -36,18 +62,60 @@ function Navbar() {
       </div>
 
       <div className="ml-[90px] flex items-center md:gap-x-[24px] gap-x-[8px]">
-        <div className="hidden md:block">
-          <div className="w-[107px] h-[24px] flex items-center justify-around">
+        <div className="hidden md:block relative group md:py-7">
+          <div className="w-[107px] h-[24px] flex items-center justify-around ">
             <img src={group} alt="" className="size-[19.92px]" />
             <p>Explore</p>
             <img src={down} alt="" className="size-[11.26px]" />
           </div>
+          <div className="absolute top-[106px] hidden group-hover:block hover:block">
+            <div className="w-[220px] h-[210px] bg-[#FFFFFF]">
+              <ul className="divide-y cursor-pointer">
+                <li className="w-[220px] h-[42px] font-popin font-normal text-sm text-[#6D747A] flex items-center px-4">
+                  People - Community
+                </li>
+                <li className="w-[220px] h-[42px] font-popin font-normal text-sm text-[#6D747A] flex items-center px-4">
+                  Places - Venues
+                </li>
+                <li className="w-[220px] h-[42px] font-popin font-normal text-sm text-[#6D747A] flex items-center px-4">
+                  Programs - Events
+                </li>
+                <li className="w-[220px] h-[42px] font-popin font-normal text-sm text-[#6D747A] flex items-center px-4">
+                  Products - Store
+                </li>
+                <li className="w-[220px] h-[42px] font-popin font-normal text-sm text-[#6D747A] flex items-center px-4">
+                  Blogs
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div className="hidden md:block">
+        <div className="hidden md:block relative group md:py-7">
           <div className="w-[107px] h-[24px] flex items-center justify-around">
             <img src={group} alt="" className="size-[19.92px]" />
             <p>Hobbies</p>
             <img src={down} alt="" className="size-[11.26px]" />
+          </div>
+          <div className="absolute top-[80px] hidden group-hover:block hover:block">
+            <div className="w-[220px] h-[210px] bg-[#FFFFFF]">
+              <ul className="divide-y cursor-pointer">
+                <li className="w-[220px] h-[42px] font-popin font-normal text-sm text-[#6D747A] flex items-center px-4">
+                  People - Community
+                </li>
+                <li className="w-[220px] h-[42px] font-popin font-normal text-sm text-[#6D747A] flex items-center px-4">
+                  Places - Venues
+                </li>
+                <li className="w-[220px] h-[42px] font-popin font-normal text-sm text-[#6D747A] flex items-center px-4">
+                  Programs - Events
+                </li>
+                <li className="w-[220px] h-[42px] font-popin font-normal text-sm text-[#6D747A] flex items-center px-4">
+                  Products - Store
+                </li>
+                <li className="w-[220px] h-[42px] font-popin font-normal text-sm text-[#6D747A] flex items-center px-4">
+                  Blogs
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -66,7 +134,11 @@ function Navbar() {
           />
         </div>
         <div>
-          <img src={bellicon} alt="" className="w-[15.17px] h-[19.5px] ml-[13px] md:ml-0"/>
+          <img
+            src={bellicon}
+            alt=""
+            className="w-[15.17px] h-[19.5px] ml-[13px] md:ml-0"
+          />
         </div>
 
         <div>
