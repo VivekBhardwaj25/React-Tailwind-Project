@@ -68,7 +68,7 @@ function Navbar() {
             <p>Explore</p>
             <img src={down} alt="" className="size-[11.26px]" />
           </div>
-          <div className="absolute top-[106px] hidden group-hover:block hover:block">
+          <div className="absolute top-[80px] hidden group-hover:block hover:block">
             <div className="w-[220px] h-[210px] bg-[#FFFFFF]">
               <ul className="divide-y cursor-pointer">
                 <li className="w-[220px] h-[42px] font-popin font-normal text-sm text-[#6D747A] flex items-center px-4">
