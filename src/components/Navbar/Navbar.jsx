@@ -120,11 +120,11 @@ function Navbar() {
           </div>
         </div>
 
-        <div className="w-[30px]">
+        <div className="w-[28px]">
           <img
             src={bookmarks}
             alt=""
-            className="w-[14px] h-[18px] hidden md:block"
+            className="w-[14px] h-[16px] hidden md:block"
           />
         </div>
         <div className="h-[22px] w-[26px] bg-[#8064A2] rounded-full text-[#8064A2] fill-blue-500 flex justify-center items-center ml-[-10px] md:hidden block">
